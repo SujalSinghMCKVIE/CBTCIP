@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="stye.css">
+    <script src="https://kit.fontawesome.com/b248725954.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>BTech Student</p>
+                <h1>Hi, I'm <span>Sujal</span><br>Singh From India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/SUJAL-SINGH-PROFILE-GREY.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I’m Sujal Singh, a self-taught Front-End Developer with a knack for creating functional websites and apps using HTML, CSS, JavaScript, React JS, Angular, and more. My journey in the tech world began with a passion for learning and staying updated with the latest technology trends through various online courses and videos.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>Java | C Language | Python</li>
+                            <li><span>Web  Development</span><br>Web App Development (HTML | CSS | JavaScript).</li>
+                            <li><span>Machine Learning</span><br>Building AI&ML Models.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Apr 2024 - Present | Remote</span><br>Web Development Intern at CipherByte Technologies.</li>
+                            <li><span>Nov 2023 - Present | Freelance</span><br>Managed Network Expert at CHEGG INC.</li>
+                            <li><span>Feb 2023 - Mar 2023 | Remote</span><br>Internshala Student Partner at INTERNSHALA.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025 | Kolkata, West Bengal</span><br>BTech in Artificial Intelligence & Machine Learning from MCKV Institute Of Engineering.</li>
+                            <li><span>2019 - 2021 | Kolkata, West Bengal</span><br>Class 12th, Science, (ISC) from Sunrise (English - Medium) School.</li>
+                            <li><span>2017 - 2019 | Kolkata, West Bengal</span><br>Class 10th, Science, (ICSE) from Sunrise (English - Medium) School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development is the process of creating, building, and maintaining websites using coding languages, frameworks, databases, and design principles. It includes both front-end and back-end development.</p>
+                    <a href="https://www.linkedin.com/in/sujalsingh/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Machine learning is a subset of artificial intelligence that uses statistical techniques to enable computers to learn from data and make decisions or predictions without explicit programming.</p>
+                    <a href="https://www.linkedin.com/in/sujalsingh/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>API Development</h2>
+                    <p>API development involves creating interfaces that allow software applications to communicate, exchange data, and interact with each other, enhancing functionality and user experience.</p>
+                    <a href="https://www.linkedin.com/in/sujalsingh/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>File Flex</h3>
+                    <p>An all-in-one web application offering comprehensive file conversion and utility services.</p>
+                    <a href="https://www.linkedin.com/in/sujalsingh/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Spam Email Detector</h3>
+                    <p>A machine learning project dedicated to detecting spam emails efficiently.</p>
+                    <a href="https://www.linkedin.com/in/sujalsingh/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Alzheimer Detector</h3>
+                    <p>A machine learning-based project for early and accurate detection of Alzheimer's disease.</p>
+                    <a href="https://www.linkedin.com/in/sujalsingh/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/in/sujalsingh/" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ----------------contact us------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sujals279@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7439640535</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100055309891018"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Sujal___Singh"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/_mr_____singh_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sujalsingh/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sujal. Made with <i class="fa-solid fa-heart"></i> by Sujal Singh</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>
